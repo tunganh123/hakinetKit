@@ -50,14 +50,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             let title = indexPath.section == 0 ? "LỊCH SỬ HOẠT ĐỘNG" : "PHẦN THƯỞNG THỜI GIAN"
             header.configure(title: title)
             return header
-        } else if kind == UICollectionView.elementKindSectionFooter, indexPath.section == 0 {
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                         withReuseIdentifier: SectionBackgroundView.identifier,
-                                                                         for: indexPath)
-            footer.layer.zPosition = -1 // đảm bảo nằm dưới cell
-            return footer
         }
-
         return UICollectionReusableView()
     }
 
@@ -78,21 +71,5 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                         referenceSizeForHeaderInSection section: Int) -> CGSize
     {
         return CGSize(width: collectionView.bounds.width, height: 44)
-    }
-}
-
-class SectionBackgroundView: UICollectionReusableView {
-    static let identifier = "SectionBackgroundView"
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = .white
-        layer.cornerRadius = 16
-        layer.masksToBounds = true
-    }
-
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
