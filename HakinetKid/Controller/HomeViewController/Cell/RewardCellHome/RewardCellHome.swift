@@ -9,6 +9,9 @@ import UIKit
 
 class RewardCellHome: UICollectionViewCell {
 
+    @IBOutlet weak var desTask: UILabel!
+    @IBOutlet weak var titleTask: UILabel!
+    @IBOutlet weak var timeIncreaseLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

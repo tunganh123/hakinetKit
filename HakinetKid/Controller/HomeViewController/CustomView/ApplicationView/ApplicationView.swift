@@ -10,6 +10,7 @@ import LouisPod
 
 class ApplicationView: BaseView {
 
+    @IBOutlet weak var titleLabel: UILabel!
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -24,6 +25,12 @@ class ApplicationView: BaseView {
     }
     
     override func setupUI() {
-        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 16, weight: .semibold),
+            .foregroundColor: UIColor(hex: "#94A3B8"),
+            .kern: 1.2  // 👈 tăng khoảng cách giữa các ký tự
+        ]
+        let attributedText = NSAttributedString(string: "Ứng dụng".uppercased(), attributes: attributes)
+        titleLabel.attributedText = attributedText
     }
 }

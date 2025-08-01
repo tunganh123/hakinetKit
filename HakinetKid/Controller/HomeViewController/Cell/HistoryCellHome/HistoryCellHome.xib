@@ -27,8 +27,8 @@
                                     <constraint firstAttribute="width" constant="48" id="bR2-nq-WCk"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pMH-cc-cZq">
-                                <rect key="frame" x="68" y="5" width="159" height="43.333333333333336"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pMH-cc-cZq">
+                                <rect key="frame" x="68" y="2.3333333333333321" width="159" height="48.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 giờ thưởng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCy-9Y-Dxs">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="21.666666666666668"/>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rửa bát" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWq-yH-lEr">
-                                        <rect key="frame" x="0.0" y="21.666666666666664" width="159" height="21.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="26.666666666666664" width="159" height="21.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -58,6 +58,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="tkg-kd-Nou" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LJc-Zc-w1k"/>
                 <constraint firstItem="tkg-kd-Nou" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="f4g-vh-gD8"/>
